@@ -1,55 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, arial, sans-serif;
+  }
 
-body{
-    background-color: gainsboro;
+.container {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
 }
 
-header {
+nav {
     display: flex;
-    justify-content: center;
-    margin: 0 1rem 0 1rem;
+    justify-content: space-between;
+    background-color: #9fc6f1;
+    padding: 0.6rem 1rem;
+    align-items: center;
 }
 
-footer {
-   display: flex;
+.project {
+    margin: 0;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 
-li {
+.card-code {
+    width: 380px;
+    height: 240px;
     display: flex;
     flex-wrap: wrap;
+    margin: 1.5rem;
+    border: 1px solid rgb(96, 190, 228);
+    border-radius: 5px;
+    -webkit-box-shadow: 1px -1px 4px 2px rgb(0 0 0 / 33%);
+    box-shadow: 6px -6px 10px 1px rgb(0 0 0 / 30%);
+    position: relative;
+    flex-direction: column;
 }
 
-.card {
-    display: grid;
-    box-shadow: 0 4px 8px 0 rgba(59, 58, 58, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    
-}  
-    .title {
-        color: grey;
-        font-size: 18px;
-    }
-    
-    button {
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-title {
+    margin: 0px;
+    font-size: large;
+    padding: 0.8rem 1rem 0rem 0.8rem;
+}
+
+
+.footer {
+    display: flex;
+    margin: -1.5rem 0rem 2rem;
+    width: 100%;
+    height: 400px
+;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(https://blueedtech.com.br/wp-content/uploads/2021/11/react-1024x602.png);
+}
+
+.footer-inscricao {
+    color: white;
+    padding-top: 7rem;
+    font-size: 35px;
+}
+
+.footer-button {
+    margin-top: -4rem;
+    padding: 0.7rem 1rem;
+    background: cornflowerblue;
+    border-radius: 4px;
+    color: white;
+    font-size: medium;
+    font-weight: normal;
     border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        font-size: 18px;
-    }
-    
-    a {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-    }
-    
-    button:hover, a:hover {
-        opacity: 0.7;
-    }
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.footer-direitos {
+    color: gray;
+    background-color: #333b44 !important;
+    padding: 0.5rem 0rem;
+    width: 100%;
+    text-align: center;
+    font-size: smaller;
+}
+
+.div-img {
+    height: 150px;
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--Ij0eKVIW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/77oanfb0c05w88jlmc8s.jpg);
+    background-position: center;
+}
